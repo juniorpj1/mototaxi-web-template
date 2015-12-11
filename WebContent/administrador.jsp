@@ -49,6 +49,10 @@
         					</li>
         					
         					<li class="list-group-item">
+        					<b><a href="<%=request.getContextPath()%>/administrador/motoBuscar.jsp">UC10 - Mostrar mototaxistas por nome</a></b>
+        					</li>
+        					
+        					<li class="list-group-item">
         					<b><a href="<%=request.getContextPath()%>/cliente/MotoTaxistaCRUD?cmd=listaemp">UC001 - Mostrar corridas do Mototaxista por período</a></b>
         					</li>
         					

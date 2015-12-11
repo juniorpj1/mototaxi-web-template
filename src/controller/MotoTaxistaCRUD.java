@@ -36,6 +36,9 @@ public class MotoTaxistaCRUD extends HttpServlet {
 	private static String LISTAR_CHAMADO = "/administrador/listarChamado.jsp";
 	private static String FORM_EMPRESA = "/administrador/dataChamadoForm.jsp";
 
+	// Páginas JSP do Roberto
+	private static String LISTAR_MOTOTAXISTA = "/cliente/mototaxistaProcurarPorNome.jsp";
+
 	private static String ERRO = "/publico/erro.jsp";
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -174,7 +177,7 @@ public class MotoTaxistaCRUD extends HttpServlet {
 				forward = ERRO;
 			}
 		}
-		
+
 		// Listar todas as empresas - Aparício - UC05
 		else if (cmd.equalsIgnoreCase("listaemp")) {
 			try {
@@ -187,7 +190,7 @@ public class MotoTaxistaCRUD extends HttpServlet {
 			RequestDispatcher rd = request.getRequestDispatcher(forward);
 			rd.forward(request, response);
 		}
-		
+
 		// Listar chamados entre períodos - Aparício - UC05
 		else if (cmd.equalsIgnoreCase("chamados")) {
 			int cod = Integer.parseInt(request.getParameter("cod"));
@@ -211,11 +214,11 @@ public class MotoTaxistaCRUD extends HttpServlet {
 
 		MotoTaxistaServico mototaxistaServico = ServicoFactory.criarMotoTaxistaServico();
 		EmpresaServico empService = ServicoFactory.criarEmpresaServico();
-		
+
 		String forward = "";
 
 		try {
-			
+
 			MotoTaxista mot = instanciar(request);
 			if (mot.getCodMotoTaxista() == null) {
 				mototaxistaServico.inserir(mot);
@@ -233,7 +236,7 @@ public class MotoTaxistaCRUD extends HttpServlet {
 		}
 
 		// Listar chamados entre período - Aparício - UC05
-		//int x = Integer.parseInt(request.getParameter("cod"));
+		// int x = Integer.parseInt(request.getParameter("cod"));
 
 		String forward1 = "";
 
@@ -254,6 +257,22 @@ public class MotoTaxistaCRUD extends HttpServlet {
 		RequestDispatcher rd = request.getRequestDispatcher(forward1);
 		rd.forward(request, response);
 
+		// Listar mototaxistas por nome - Roberto - UC10
+
+		MotoTaxistaServico motoService = ServicoFactory.criarMotoTaxistaServico();
+		String forward2 = "";
+		String nome = request.getParameter("nome");
+
+		try {
+			List<MotoTaxista> moto = motoService.buscarPorNome(nome);
+			request.setAttribute("moto", moto);
+			forward2 = LISTAR_MOTOTAXISTA;
+			RequestDispatcher rd1 = request.getRequestDispatcher(forward2);
+			rd1.forward(request, response);
+		} catch (RuntimeException e) {
+			request.setAttribute("erro", "Erro de execução: " + e.getMessage());
+			forward2 = ERRO;
+		}
 	}
 
 	private MotoTaxista instanciar(HttpServletRequest req) throws RuntimeException {
