@@ -24,6 +24,18 @@
 	<%@ include file="/resources/includes/barra-superior.jsp"%>
 
 	<!--  +++++++++++ SECAO PRINCIPAL +++++++++++ -->
+	<div class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1 class="text-center">UC001 - Mostrar chamados por período</h1>
+					<p class="text-center">Seja bem-vindo!</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--  +++++++++++ SECAO PRINCIPAL +++++++++++ -->
 	<div id="main" class="container-fluid">
 		<div id="top" class="row">
 			<div class="col-md-3">
@@ -32,9 +44,7 @@
 
 			<div class="col-md-3"></div>
 
-			<div class="col-md-3">
-				
-			</div>
+			<div class="col-md-3"></div>
 		</div>
 
 		<!--  +++++++++ LISTAGEM ++++++++ -->

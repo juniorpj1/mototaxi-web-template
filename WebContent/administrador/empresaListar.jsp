@@ -92,6 +92,7 @@
 				<a class="btn btn-success btn-xs" href="<%=request.getContextPath()%>/cliente/EmpresaCRUD?cmd=visualizar&cod=${x.codEmpresa}">Visualizar</a>
 				<a class="btn btn-warning btn-xs" href="<%=request.getContextPath()%>/cliente/EmpresaCRUD?cmd=editar&cod=${x.codEmpresa}">Editar</a>
 				<a class="btn btn-danger btn-xs" href="<%=request.getContextPath()%>/cliente/EmpresaCRUD?cmd=deletar&cod=${x.codEmpresa}">Excluir</a>
+				<br/>
 				<a class="btn btn-success btn-xs" href="<%=request.getContextPath()%>/cliente/MotoTaxistaCRUD?cmd=chamados&cod=${x.codEmpresa}">Mostrar chamados por período</a></td>
 				</td>
 				

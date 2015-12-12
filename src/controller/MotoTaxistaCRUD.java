@@ -23,7 +23,6 @@ import servico.ServicoFactory;
 public class MotoTaxistaCRUD extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
-	// Páginas JSP da Anna
 	private static String VISUALIZAR = "/administrador/visualizarMototaxista.jsp";
 	private static String INSERIR_OU_ALTERAR = "/administrador/motoForm.jsp";
 	private static String LISTAR = "/administrador/listarMototaxista.jsp";
@@ -35,9 +34,6 @@ public class MotoTaxistaCRUD extends HttpServlet {
 	private static String LISTAR_EMPRESA = "/administrador/empresaListar.jsp";
 	private static String LISTAR_CHAMADO = "/administrador/listarChamado.jsp";
 	private static String FORM_EMPRESA = "/administrador/dataChamadoForm.jsp";
-
-	// Páginas JSP do Roberto
-	private static String LISTAR_MOTOTAXISTA = "/cliente/mototaxistaProcurarPorNome.jsp";
 
 	private static String ERRO = "/publico/erro.jsp";
 
@@ -209,6 +205,7 @@ public class MotoTaxistaCRUD extends HttpServlet {
 
 	}
 
+	@SuppressWarnings("deprecation")
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
@@ -236,7 +233,6 @@ public class MotoTaxistaCRUD extends HttpServlet {
 		}
 
 		// Listar chamados entre período - Aparício - UC05
-		// int x = Integer.parseInt(request.getParameter("cod"));
 
 		String forward1 = "";
 
@@ -257,22 +253,6 @@ public class MotoTaxistaCRUD extends HttpServlet {
 		RequestDispatcher rd = request.getRequestDispatcher(forward1);
 		rd.forward(request, response);
 
-		// Listar mototaxistas por nome - Roberto - UC10
-
-		MotoTaxistaServico motoService = ServicoFactory.criarMotoTaxistaServico();
-		String forward2 = "";
-		String nome = request.getParameter("nome");
-
-		try {
-			List<MotoTaxista> moto = motoService.buscarPorNome(nome);
-			request.setAttribute("moto", moto);
-			forward2 = LISTAR_MOTOTAXISTA;
-			RequestDispatcher rd1 = request.getRequestDispatcher(forward2);
-			rd1.forward(request, response);
-		} catch (RuntimeException e) {
-			request.setAttribute("erro", "Erro de execução: " + e.getMessage());
-			forward2 = ERRO;
-		}
 	}
 
 	private MotoTaxista instanciar(HttpServletRequest req) throws RuntimeException {
