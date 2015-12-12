@@ -34,7 +34,6 @@ public class MotoTaxistaCRUD extends HttpServlet {
 	private static String LISTAR_EMPRESA = "/administrador/empresaListar.jsp";
 	private static String LISTAR_CHAMADO = "/administrador/listarChamado.jsp";
 	private static String FORM_EMPRESA = "/administrador/dataChamadoForm.jsp";
-
 	private static String ERRO = "/publico/erro.jsp";
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -67,7 +66,7 @@ public class MotoTaxistaCRUD extends HttpServlet {
 			RequestDispatcher rd = request.getRequestDispatcher(forward);
 			rd.forward(request, response);
 		}
-
+		
 		else if (cmd.equalsIgnoreCase("editar")) {
 			int cod = Integer.parseInt(request.getParameter("cod"));
 			try {
@@ -211,9 +210,8 @@ public class MotoTaxistaCRUD extends HttpServlet {
 
 		MotoTaxistaServico mototaxistaServico = ServicoFactory.criarMotoTaxistaServico();
 		EmpresaServico empService = ServicoFactory.criarEmpresaServico();
-
+		
 		String forward = "";
-
 		try {
 
 			MotoTaxista mot = instanciar(request);
@@ -233,9 +231,7 @@ public class MotoTaxistaCRUD extends HttpServlet {
 		}
 
 		// Listar chamados entre período - Aparício - UC05
-
 		String forward1 = "";
-
 		String dataEmTexto = request.getParameter("dataInicial");
 		String dataEmTexto2 = request.getParameter("dataFinal");
 
@@ -246,9 +242,12 @@ public class MotoTaxistaCRUD extends HttpServlet {
 
 			request.setAttribute("lista", lista1);
 			forward1 = LISTAR_CHAMADO;
+
+			
 		} catch (RuntimeException e) {
 			request.setAttribute("erro", "Erro de execução: " + e.getMessage());
 			forward1 = ERRO;
+		
 		}
 		RequestDispatcher rd = request.getRequestDispatcher(forward1);
 		rd.forward(request, response);

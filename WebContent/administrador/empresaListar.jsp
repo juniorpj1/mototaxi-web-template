@@ -89,18 +89,17 @@
 							<td>${x.bairro}</td>
 							<td>${x.cep}</td>
 
-							<td><a class="btn btn-success btn-xs"
-								href="<%=request.getContextPath()%>/cliente/EmpresaCRUD?cmd=visualizar&cod=${x.codEmpresa}">Visualizar</a>
-								<a class="btn btn-warning btn-xs"
-								href="<%=request.getContextPath()%>/cliente/EmpresaCRUD?cmd=editar&cod=${x.codEmpresa}">Editar</a>
-								<a class="btn btn-danger btn-xs"
-								href="<%=request.getContextPath()%>/cliente/EmpresaCRUD?cmd=deletar&cod=${x.codEmpresa}">Excluir</a>
-								<br /> <a class="btn btn-success btn-xs"
-								href="<%=request.getContextPath()%>/cliente/MotoTaxistaCRUD?cmd=chamados&cod=${x.codEmpresa}">Mostrar
-									chamados por período</a></td>
-							
-
-
+							<td>
+							<a class="btn btn-warning btn-xs"
+								href="<%=request.getContextPath()%>/cliente/MototaxistaServlet?cmd=acimamedia&cod=${x.codEmpresa}">Mototaxistas abaixo da média</a>
+							<a class="btn btn-success btn-xs"
+								href="<%=request.getContextPath()%>/cliente/EmpresaCRUD?cmd=visualizar&cod=${x.codEmpresa}">Detalhes da Empresa</a>
+								<a class="btn btn-success btn-xs"
+								href="<%=request.getContextPath()%>/cliente/EmpresaCRUD?cmd=editar&cod=${x.codEmpresa}">Editar Empresa</a>
+								<a class="btn btn-success btn-xs"
+								href="<%=request.getContextPath()%>/cliente/EmpresaCRUD?cmd=deletar&cod=${x.codEmpresa}">Excluir Empresa</a>
+								<br /> <a class="btn btn-danger btn-xs"
+								href="<%=request.getContextPath()%>/cliente/MotoTaxistaCRUD?cmd=chamados&cod=${x.codEmpresa}">Chamados por período</a></td>
 						</tr>
 					</c:forEach>
 				</tbody>

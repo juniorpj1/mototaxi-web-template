@@ -11,7 +11,7 @@
 				<div class="modal-body"> Deseja realmente excluir esse item? </div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-primary"> Sim </button>
-					<button type="button" class="btn btn-default">N&atilde;o </button>
+					<button type="button" class="btn btn-default">Não </button>
 				</div>
 			</div>
 		</div>

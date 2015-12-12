@@ -64,6 +64,10 @@
         					<b>UC012 - Pesquisar corridas por Cliente
         					</b>
         					</li>
+        					
+        					<li class="list-group-item">
+        					<b><a href="<%=request.getContextPath()%>/cliente/MotoTaxistaCRUD?cmd=listaemp"> UC003 - Mostrar Mototaxistas acima da média</a></b>
+        					</li>
         				</ul>
         			</div>
         		</div>
