@@ -36,7 +36,7 @@
 		 				<label for="campo1">
 		 					Data Inicial:
 		 				</label>
-		 				<input type="text" name="dataInicial" class="form-control" id="campo1" placaholder="Digite a 1º Data" >	
+		 				<input type="text" name="dataInicial" class="form-control" id="campo1" placeholder="Digite a 1º Data" >	
 		 			</div>
 		 		</div>
 		 		
