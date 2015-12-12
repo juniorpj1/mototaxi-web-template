@@ -17,45 +17,59 @@
 	<!--  +++++++++++ BARRA DE NAVEGACAO +++++++++++ -->
 	<%@ include file="/resources/includes/barra-superior.jsp"%>
 
-	<h2>Mostrando média</h2>
+	<!--  +++++++++++ SECAO PRINCIPAL +++++++++++ -->
+	<div class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1 class="text-center">UC005 - Mostrar média de um
+						MotoTaxista</h1>
+					<p class="text-center">Seja bem-vindo!</p>
+				</div>
+			</div>
+		</div>
+	</div>
 
-	<%
-		Double media = (Double) request.getAttribute("media");
-		String nome = (String) request.getAttribute("nome");
-	%>
+	<!--  +++++++++++ SECAO PRINCIPAL +++++++++++ -->
+	<div id="main" class="container-fluid">
+		<div id="top" class="row">
+			<div class="col-md-3">
+				<h2>Listando médias dos Mototaxistas:</h2>
+			</div>
 
-	<div class="row">
-		<div class="table-responsive col-md-12">
-			<table class="table table-striped" cellspacing="0" cellpadding="0">
-				<tr>
-					<th>Nome</th>
-					<th>Média</th>
-				</tr>
+			<div class="col-md-3"></div>
 
-				<tr>
-					<td><%=nome%></td>
-					<td><%=media%></td>
-				</tr>
-			</table>
-
+			<div class="col-md-3"></div>
 		</div>
 
-	</div>
-	<!-- /#list -->
-</head>
+		<h2>Mostrando média</h2>
 
+		<%
+			Double media = (Double) request.getAttribute("media");
+			String nome = (String) request.getAttribute("nome");
+		%>
+
+		<div class="row">
+			<div class="table-responsive col-md-12">
+				<table class="table table-striped" cellspacing="0" cellpadding="0">
+					<tr>
+						<th>Nome</th>
+						<th>Média</th>
+					</tr>
+
+					<tr>
+						<td><%=nome%></td>
+						<td><%=media%></td>
+					</tr>
+				</table>
+
+			</div>
+
+		</div>
+		<!-- /#list -->
+		</head>
 </body>
 
-
-<!-- 		<!--  +++++++++++ SECAO PRINCIPAL +++++++++++ -->
-
-<!-- 		 <div id="margem-pequena"> -->
-<!-- 		 	<div id="main" class="container-fluid"> -->
-
-<%-- 		 		<h3 class="page-header"> Inserido com sucesso! Código: <c:out value = ${mot.codMotoTaxista}"/></h3> --%>
-<%-- 		 		<b> <a class="btn btn-success btn-xs" href="<%=request.getContextPath()%>/cliente/EmpresaCRUD?cmd=listar">Voltar ao caso de uso<br></a></b> --%>
-<!-- 		 	</div> -->
-<!-- 		 </div> -->
 
 <!--  +++++++++++ RODAPE +++++++++++ -->
 <%@ include file="/resources/includes/rodape.jsp"%>
@@ -63,8 +77,8 @@
 <!--  +++++++++++ REFERENCIAS ADICIONAIS DO BOOTSTRAP +++++++++++ -->
 <%@ include file="/resources/includes/refs-bootstrap-final.jsp"%>
 
-<!--  +++++++++++ CODIGO DA JANELA MODAL DE CONFIRMAR EXCLUSAO +++++++++++ -->
-<%@ include file="/resources/includes/confirmar-exclusao-modal.jsp"%>
+<!--  +++++++++++ CODIGO DA JANELA MODAL DE CONFIRMAR EXCLUSAO +++++++++++ 
+		 <%@ include file="/resources/includes/confirmar-exclusao-modal.jsp"%>-->
 
 </body>
 </html>
