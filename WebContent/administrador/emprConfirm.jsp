@@ -7,7 +7,6 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-		<meta charset="utf-8">
 		<link rel="icon" href="resources/img/icone-uberlandia-mototaxi.ico">
 		<meta http-equiv="X-UA-Compatible" content="IE-edge">
 		<meta name="description" content="">
@@ -26,7 +25,7 @@
 		 <div id="margem-pequena">
 		 	<div id="main" class="container-fluid">
 		 	
-		 		<h3 class="page-header"> Inserido com sucesso! Código: <c:out value = ${mot.codMotoTaxista}"/></h3>
+		 		<h3 class="page-header"> Inserido com sucesso! Código: <c:out value = "${mot.codMotoTaxista}"/></h3>
 		 		<b> <a class="btn btn-success btn-xs" href="<%=request.getContextPath()%>/cliente/EmpresaCRUD?cmd=listar">Voltar ao caso de uso<br></a></b>
 		 	</div>
 		 </div>

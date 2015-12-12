@@ -67,7 +67,7 @@
 
 		</div>
 		<!-- /#list -->
-		</head>
+		</div>
 </body>
 
 

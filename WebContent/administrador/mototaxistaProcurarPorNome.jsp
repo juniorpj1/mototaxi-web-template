@@ -8,23 +8,24 @@
 
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
-<link rel="icon" href="resources/img/icone-uberlandia-mototaxi.ico">
+<link rel="icon" href="resources/img/icone-uberlandia-mototaxi.ico" />
 <title>Uberlândia Mototaxi</title>
-<!--  +++++++++++ REFERENCIAS BASICAS DO BOOTSTRAP +++++++++++ -->
-<%@ include file="/resources/includes/refs-bootstrap-inicio.jsp"%>
 </head>
 
 
 <body>
+	<!--  +++++++++++ REFERENCIAS BASICAS DO BOOTSTRAP +++++++++++ -->
+	<%@ include file="/resources/includes/refs-bootstrap-inicio.jsp"%>
 	<!--  +++++++++++ BARRA DE NAVEGACAO +++++++++++ -->
 	<%@ include file="/resources/includes/barra-superior.jsp"%>
-	
+
 	<!--  +++++++++++ SECAO PRINCIPAL +++++++++++ -->
 	<div class="section">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<h1 class="text-center">UC010 - Mostrar Mototaxistas por trecho do nome</h1>
+					<h1 class="text-center">UC010 - Mostrar Mototaxistas por
+						trecho do nome</h1>
 					<p class="text-center">Seja bem-vindo!</p>
 				</div>
 			</div>
@@ -74,32 +75,32 @@
 			</div>
 			<!-- /#list -->
 		</div>
-	</div>	
+	</div>
 
-		<div id="bottom" class="row">
-			<div class="col-md-12">
+	<div id="bottom" class="row">
+		<div class="col-md-12">
 
-				<ul class="pagination">
-					<li class="disabled"><a>&lt; Anterior</a></li>
-					<li class="disabled"><a>1</a></li>
-					<li><a href="#">2</a></li>
-					<li><a href="#">3</a></li>
-					<li class="next"><a href="#" rel="next">Próximo &gt;</a></li>
-				</ul>
-				<!-- /.pagination -->
+			<ul class="pagination">
+				<li class="disabled"><a>&lt; Anterior</a></li>
+				<li class="disabled"><a>1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li class="next"><a href="#" rel="next">Próximo &gt;</a></li>
+			</ul>
+			<!-- /.pagination -->
 
-			</div>
 		</div>
-		<!-- /#bottom -->
+	</div>
+	<!-- /#bottom -->
 
 
-		<!--  +++++++++++ RODAPE +++++++++++ -->
-		<%@ include file="/resources/includes/rodape.jsp"%>
+	<!--  +++++++++++ RODAPE +++++++++++ -->
+	<%@ include file="/resources/includes/rodape.jsp"%>
 
-		<!--  +++++++++++ REFERENCIAS ADICIONAIS DO BOOTSTRAP +++++++++++ -->
-		<%@ include file="/resources/includes/refs-bootstrap-final.jsp"%>
+	<!--  +++++++++++ REFERENCIAS ADICIONAIS DO BOOTSTRAP +++++++++++ -->
+	<%@ include file="/resources/includes/refs-bootstrap-final.jsp"%>
 
-		<!--  +++++++++++ CODIGO DA JANELA MODAL DE CONFIRMAR EXCLUSAO +++++++++++ -->
-		<%@ include file="/resources/includes/confirmar-exclusao-modal.jsp"%>
+	<!--  +++++++++++ CODIGO DA JANELA MODAL DE CONFIRMAR EXCLUSAO +++++++++++ -->
+	<%@ include file="/resources/includes/confirmar-exclusao-modal.jsp"%>
 </body>
 </html>

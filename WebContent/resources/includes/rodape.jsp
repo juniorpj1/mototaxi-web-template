@@ -1,3 +1,4 @@
+<!DOCTYPE footer>
 <footer class="section section-primary">
             <div class="container">
                 <div class="row">

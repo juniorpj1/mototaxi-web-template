@@ -7,7 +7,6 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<meta charset="utf-8">
 <link rel="icon" href="resources/img/icone-uberlandia-mototaxi.ico">
 <meta http-equiv="X-UA-Compatible" content="IE-edge">
 <meta name="description" content="">
@@ -99,8 +98,7 @@
 		</div>
 	</div>
 	<!-- /#bottom -->
-	</div>
-
+	
 	<!--  +++++++++++ RODAPE +++++++++++ -->
 	<%@ include file="/resources/includes/rodape.jsp"%>
 
