@@ -12,7 +12,7 @@
 		<meta name="description" content="">
 		<meta name="author" content="Anna Carolina Novaes">
 		
-		<title>Uberlândia Mototáxi</title>
+		<title>Sobre - Uberlândia Mototáxi</title>
 
 		<!--  +++++++++++ REFERENCIAS BASICAS DO BOOTSTRAP +++++++++++ -->
 		<%@ include file="/resources/includes/refs-bootstrap-inicio.jsp"%> 
@@ -27,12 +27,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1>Sobre nós</h1>
+                        <h1>Sobre</h1>
                         <br>
                         <br>
                         <h4>Este sistema consiste de um sistema desenvolvido como "Projeto Integrador" 
 		 				do 4º período do curso Tecnologia em Sistemas para Internet, sob orientação do professor 
-		 				<a href="nelioalves.com"> Nelio Alves </a>, no semestre 2015-2.</h4>
+		 				<a href="nelioalves.com"> Nelio Alves </a>, no semestre 2015-2.
+		 				</h4>
                     </div>
                 </div>
             </div>

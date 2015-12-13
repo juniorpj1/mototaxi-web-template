@@ -38,7 +38,7 @@ public class AvaliacaoDaoImpl implements AvaliacaoDao {
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<Avaliacao> buscarTodos() {
-		String jpql = "SELECT x FROM Artista x";
+		String jpql = "SELECT x FROM Avaliacao x";
 		Query query = em.createQuery(jpql);
 		return query.getResultList();
 	}

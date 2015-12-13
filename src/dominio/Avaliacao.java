@@ -68,6 +68,14 @@ public class Avaliacao implements Serializable {
 		this.cliente = cliente;
 	}
 
+	
+	public MotoTaxista getMotoTaxista() {
+		return motoTaxista;
+	}
+
+	public void setMotoTaxista(MotoTaxista motoTaxista) {
+		this.motoTaxista = motoTaxista;
+	}
 
 	@Override
 	public String toString() {

@@ -7,6 +7,7 @@ import javax.persistence.Query;
 
 import dao.ClienteDao;
 import dominio.Cliente;
+import dominio.MotoTaxista;
 
 public class ClienteDaoImpl implements ClienteDao {
 
@@ -43,6 +44,22 @@ public class ClienteDaoImpl implements ClienteDao {
 		String jpql = "SELECT x FROM Cliente x";
 		Query query = em.createQuery(jpql);
 		return query.getResultList();
+	}
+	
+	@SuppressWarnings("unchecked")
+	public List<Cliente> buscarPorNome(String nome){
+	
+	String s = "SELECT a FROM Cliente a WHERE 1=1";
+	
+	if (nome != null)
+	s = s + " AND a.nome LIKE :n1";
+	
+	Query query = em.createQuery(s);
+	
+	if(nome != null)
+	query.setParameter("n1", "%"+nome+"%");
+	
+	return query.getResultList();
 	}
 
 }

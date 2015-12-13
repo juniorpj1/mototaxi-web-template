@@ -40,4 +40,9 @@ public class ClienteServicoImpl implements ClienteServico {
 		return dao.buscarTodos();
 	}
 
+	@Override
+	public List<Cliente> buscarPorNome(String nome) {
+		return dao.buscarPorNome(nome);
+	}
+
 }

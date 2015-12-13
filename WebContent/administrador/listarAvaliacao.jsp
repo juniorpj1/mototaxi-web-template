@@ -28,10 +28,9 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<h1 class="text-center">UC013 - Manter Empresa</h1>
-					<p class="text-center">Seja bem-vindo! Por favor, escolha uma
-						das Empresas para efetuar as manutenções desejadas ou adicione uma
-						nova:</p>
+					<h1 class="text-center">UC006 - Cadastrar Avaliação</h1>
+					<p class="text-center">Seja bem-vindo! Por favor, fique à
+						vontade para cadastrar ou visualizar uma Avaliação.</p>
 				</div>
 			</div>
 		</div>
@@ -41,15 +40,15 @@
 	<div id="main" class="container-fluid">
 		<div id="top" class="row">
 			<div class="col-md-3">
-				<h2>Empresas cadastradas:</h2>
+				<h2>Avaliações cadastradas:</h2>
 			</div>
 
 			<div class="col-md-3"></div>
 
 			<div class="col-md-3">
 				<a class="btn btn-success btn-xs pull-right h2"
-					href="<%=request.getContextPath()%>/cliente/EmpresaCRUD?cmd=novo&codEmpresa=${x.codEmpresa}">Adicionar
-					nova Empresa</a>
+					href="<%=request.getContextPath()%>/cliente/AvaliacaoCRUD?cmd=novo">Adicionar
+					nova Avaliação</a>
 			</div>
 		</div>
 	</div>
@@ -63,50 +62,20 @@
 				<thead>
 					<tr>
 						<th>Código</th>
-						<th>Nome fantasia</th>
-						<th>Razão social</th>
-						<th>Telefone</th>
-						<th>E-mail</th>
-						<th>CNPJ</th>
-						<th>Logradouro</th>
-						<th>Número</th>
-						<th>Bairro</th>
-						<th>CEP</th>
-						<th colspan="2">Ação</th>
+						<th>Nota</th>
+						<th>Descrição</th>
+						<th>Mototaxista</th>
+						<th>Cliente</th>
 					</tr>
 				</thead>
 				<tbody>
 					<c:forEach items="${lista}" var="x">
 						<tr>
-							<td>${x.codEmpresa}</td>
-							<td>${x.nomeFantasia}</td>
-							<td>${x.razaoSocial}</td>
-							<td>${x.telefone}</td>
-							<td>${x.email}</td>
-							<td>${x.cnpj}</td>
-							<td>${x.logradouro}</td>
-							<td>${x.numero}</td>
-							<td>${x.bairro}</td>
-							<td>${x.cep}</td>
-
-							<td>
-							<a class="btn btn-warning btn-xs"
-								href="<%=request.getContextPath()%>/cliente/MototaxistaServlet?cmd=acimamedia&cod=${x.codEmpresa}">Mototaxistas acima da média</a>
-								<br />
-							<a class="btn btn-warning btn-xs"
-								href="<%=request.getContextPath()%>/cliente/MototaxistaServlet2?cmd=abaixomedia&cod=${x.codEmpresa}">Mototaxistas abaixo da média</a>
-								<br />
-							<a class="btn btn-success btn-xs"
-								href="<%=request.getContextPath()%>/cliente/EmpresaCRUD?cmd=visualizar&cod=${x.codEmpresa}">Detalhes da Empresa</a>
-								<br />	
-							<a class="btn btn-success btn-xs"
-								href="<%=request.getContextPath()%>/cliente/EmpresaCRUD?cmd=editar&cod=${x.codEmpresa}">Editar Empresa</a>
-								<br />
-							<a class="btn btn-danger btn-xs"
-								href="<%=request.getContextPath()%>/cliente/EmpresaCRUD?cmd=deletar&cod=${x.codEmpresa}">Excluir Empresa</a>
-								<br /> 
-							<a class="btn btn-success btn-xs"
-								href="<%=request.getContextPath()%>/cliente/MotoTaxistaCRUD?cmd=chamados&cod=${x.codEmpresa}">Chamados por período</a></td>
+							<td>${x.codAvaliacao}</td>
+							<td>${x.nota}</td>
+							<td>${x.descricao}</td>
+							<td>${x.getMotoTaxista().getNome()}</td>
+							<td>${x.getCliente().getNome()}</td>
 						</tr>
 					</c:forEach>
 				</tbody>

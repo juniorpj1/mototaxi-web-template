@@ -49,25 +49,29 @@
         					</li>
         					
         					<li class="list-group-item">
-        					<b><a href="<%=request.getContextPath()%>/administrador/motoBuscar.jsp">UC10 - Mostrar mototaxistas por nome</a></b>
+        					<b><a href="<%=request.getContextPath()%>/administrador/motoBuscar.jsp">UC010 - Consultar Mototaxista por nome</a></b>
         					</li>
         					
         					<li class="list-group-item">
-        					<b><a href="<%=request.getContextPath()%>/cliente/MotoTaxistaCRUD?cmd=listaemp">UC001 - Mostrar corridas do Mototaxista por período</a></b>
+        					<b><a href="<%=request.getContextPath()%>/cliente/MotoTaxistaCRUD?cmd=listaemp">UC001 - Vizualizar corridas do Mototaxista por período entre datas</a></b>
         					</li>
         					
         					<li class="list-group-item">
-        					<b><a href="<%=request.getContextPath()%>/cliente/MotoTaxistaCRUD?cmd=listar2"> UC005 - Mostrar média de um Mototaxista</a></b>
+        					<b><a href="<%=request.getContextPath()%>/cliente/MotoTaxistaCRUD?cmd=listar2"> UC005 - Vizualizar média de notas para um Mototaxista</a></b>
         					</li>
         					
         					<li class="list-group-item">
-        					<b>UC012 - Pesquisar corridas por Cliente
-        					</b>
+        					<b><a href="<%=request.getContextPath()%>/cliente/AvaliacaoCRUD?cmd=listar"> UC006 - Cadastrar avaliação</a></b>
         					</li>
         					
         					<li class="list-group-item">
-        					<b><a href="<%=request.getContextPath()%>/cliente/MotoTaxistaCRUD?cmd=listaemp"> UC003 - Mostrar Mototaxistas acima da média</a></b>
+        					<b><a href="<%=request.getContextPath()%>/cliente/MotoTaxistaCRUD?cmd=listaemp"> UC003 - Vizualizar Mototaxistas acima da média</a></b>
         					</li>
+        					
+        					<li class="list-group-item">
+        					<b><a href="<%=request.getContextPath()%>/cliente/MototaxistaServlet2?cmd=listaemp"> UC002- Vizualizar Mototaxistas abaixo da média</a></b>
+        					</li>
+        					
         				</ul>
         			</div>
         		</div>
