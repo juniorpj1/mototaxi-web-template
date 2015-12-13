@@ -38,29 +38,12 @@
                     </div>
                     <div class="col-md-4">
                         <i class="fa fa-4x fa-fw fa-group pull-left"></i>
-                        <h2>Cadastro para clientes e empresas</h2>
+                        <h2>Cadastro para empresas</h2>
                         <p>Nossos clientes que possuem login, tem acesso a suas corridas e podem
                             avaliar cada uma, respectvamente. Também provemos com um cadastro de empresas,
-                            para aumento da capacidade e melhoria em nossos serviços</p>
+                            para aumento da capacidade e melhoria em nossos serviços. Além de outras funcionalidades
+                            que aumentam a produtividade da sua empresa, como ver avaliações dos Mototaxistas acima da média.</p>
                     </div>
                 </div>
             </div>
         </div>
-        
-        <div class="section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <ul class="breadcrumb">
-                            <li class="active">
-                                <a href="uberlandia-mototaxi.html">Home</a>
-                            </li>
-                            <li>
-                                <a href="#">Library</a>
-                            </li>
-                            <li class="active">Data</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
- </div>

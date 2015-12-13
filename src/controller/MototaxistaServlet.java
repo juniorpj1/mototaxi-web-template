@@ -88,8 +88,8 @@ public class MototaxistaServlet extends HttpServlet {
 			forward = ERRO;
 		}
 
-		RequestDispatcher rd3 = request.getRequestDispatcher(forward);
-		rd3.forward(request, response);
+		RequestDispatcher rd = request.getRequestDispatcher(forward);
+		rd.forward(request, response);
 	}
 
 }

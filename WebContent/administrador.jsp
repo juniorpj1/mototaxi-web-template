@@ -3,7 +3,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
     
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
@@ -37,15 +37,15 @@
         			<div class="col-md-12">
         				<ul class="list-group">
         					<li class="list-group-item">
-        					<b><a href="<%=request.getContextPath()%>/cliente/MotoTaxistaCRUD?cmd=listar">UC004 - Manter Mototaxista<br></a></b>
+        					<b><a href="<%=request.getContextPath()%>/cliente/MotoTaxistaCRUD?cmd=listar">UC004 - Gerenciar Mototaxistas<br></a></b>
         					</li>
         					
         					<li class="list-group-item">
-        					<b><a href="<%=request.getContextPath()%>/cliente/EmpresaCRUD?cmd=listar">UC013 - Manter Empresa<br></a></b>
+        					<b><a href="<%=request.getContextPath()%>/cliente/EmpresaCRUD?cmd=listar">UC013 - Gerenciar Empresa<br></a></b>
         					</li>
         					
         					<li class="list-group-item">
-        					<b>UC008 - Manter Bandeirada</b>
+        					<b>UC008 - Gerenciar Bandeirada</b>
         					</li>
         					
         					<li class="list-group-item">
@@ -73,11 +73,7 @@
         		</div>
         	</div>
         </div>
-        
-        
-        
-        
-		 
+         
 		 <!--  +++++++++++ RODAPE +++++++++++ -->
 		 <%@ include file="/resources/includes/rodape.jsp"%> 
 		

@@ -84,7 +84,7 @@
 
 					<div class="row">
 						<div class="form group col-md-6">								
- 										
+ 										<label for="disponivel">Disponibilidade: </label>
  										<c:choose> <c:when test="${mot.disponivel == false}"> 
 	 										 <input type="radio"  name="disponivel" value="true"  />Sim
 											  <input type="radio"  name="disponivel" value="false" checked="checked"/>Não

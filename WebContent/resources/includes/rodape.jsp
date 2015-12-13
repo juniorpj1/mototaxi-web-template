@@ -3,7 +3,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6">
-                        <h3 class="text-warning">udiamototaxi@gmail.com</h3>
+                        <h3 class="text-warning">uberlandiamototaxi@gmail.com</h3>
                         <p class="text-muted">Corpyright © 2015 Uberlândia Mototáxi. Todos os direitos reservados.</p>
                     </div>
                     <div class="col-sm-6" color="black">
