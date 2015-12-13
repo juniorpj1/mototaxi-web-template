@@ -3,7 +3,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
     
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
@@ -12,7 +12,7 @@
 		<meta name="description" content="">
 		<meta name="author" content="Anna Carolina Novaes">
 		
-		<title>Sobre - Uberlândia Mototáxi</title>
+		<title>Uberlândia Mototáxi</title>
 
 		<!--  +++++++++++ REFERENCIAS BASICAS DO BOOTSTRAP +++++++++++ -->
 		<%@ include file="/resources/includes/refs-bootstrap-inicio.jsp"%> 
@@ -22,23 +22,50 @@
 		 <%@ include file="/resources/includes/barra-superior.jsp"%> 
 		
 		<!--  +++++++++++ SECAO PRINCIPAL +++++++++++ -->
-		 
-		 <div class="section">
+		 <div id="margem-pequena">
+		 	<div id="main" class="container-fluid">
+		 		<h3 class="page-header"> Sobre: </h3>
+		 		
+		 	</div>
+		 </div>
+			
+			<div class="section">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1>Sobre</h1>
+                        <h1>Projeto Integrador do 4º período em Sistemas para Internet, no IFTM Câmpus Uberlândia Centro</h1>
                         <br>
                         <br>
-                        <h4>Este sistema consiste de um sistema desenvolvido como "Projeto Integrador" 
-		 				do 4º período do curso Tecnologia em Sistemas para Internet, sob orientação do professor 
-		 				<a href="nelioalves.com"> Nelio Alves </a>, no semestre 2015-2.
-		 				</h4>
+                        
+                        <header>SISTEMA DE GERENCIAMENTO DE NEGÓCIO PARA MOTOTAXI</header>
+                        <h5>
+                        
+                       
+O sistema contém as seguintes funcionalidades: <br>
+* Gerenciar Mototaxistas; <br>
+* Gerenciar Empresa; <br>
+* Cadastrar Avaliações; <br>
+<br><br>
+Relatórios: <br> 
+* Consulta de Mototaxista por nome; <br> 
+* Consulta de Cliente por nome; <br>
+* Visualizar corridas do Mototaxista por período entre datas; <br> 
+* Visualizar média de notas para um Mototaxista; <br>
+* Visualizar Mototaxistas acima da média de notas; <br>
+* Visualizar Mototaxistas abaixo da média de notas; <br>
+<br><br>
+
+Outras funcionalidades: <br>
+* A avaliação dos taxistas e da empresa consiste em atribuição de uma nota de 1 a 5 e um comentário. <br>
+ Esta avaliação é opcional para o cliente.
+                        
+                        
+		 				</h5>
                     </div>
                 </div>
             </div>
         </div>
-        
+			 
 		 <!--  +++++++++++ RODAPE +++++++++++ -->
 		 <%@ include file="/resources/includes/rodape.jsp"%> 
 		

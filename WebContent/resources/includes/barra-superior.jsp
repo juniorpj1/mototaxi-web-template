@@ -24,10 +24,12 @@
                     <ul class="nav navbar-nav navbar-right">
                        
                       	 <li>
-                            <a href="/1-mototaxi-web/administrador.jsp">Administrador<br></a>
+                            <a href="/1-mototaxi-web/administrador.jsp">Painel de Controle<br></a>
                         </li>
                         
-                         <li>
+                        <!-- 
+                        
+                        <li>
                             <a href="/1-mototaxi-web/anonimo.jsp">Anônimo<br></a>
                         </li>
                         
@@ -35,8 +37,10 @@
                             <a href="/1-mototaxi-web/cliente.jsp">Cliente<br></a>
                         </li>
                         
+                        -->
+                        
                         <li>
-                            <a href="/1-mototaxi-web/sobre.jsp">Sobre nós<br></a>
+                            <a href="/1-mototaxi-web/sobre.jsp">Sobre<br></a>
                         </li>
                     </ul>
                           

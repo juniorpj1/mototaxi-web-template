@@ -58,6 +58,7 @@
 							<th>Placa</th>
 							<th>Disponível</th>
 							<th>Empresa</th>
+							<th>Média</th>
 
 						</tr>
 					</thead>
@@ -73,7 +74,7 @@
     									Não
 									</c:if></td>
 								<td>${x.empresa.nomeFantasia}</td>
-
+								<td>${x.media()}</td>
 
 							</tr>
 						</c:forEach>
