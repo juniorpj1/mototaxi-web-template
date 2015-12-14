@@ -36,6 +36,11 @@
         		<div class="row">
         			<div class="col-md-12">
         				<ul class="list-group">
+        					
+        					<li class="list-group-item">
+        					<b><a href="<%=request.getContextPath()%>/cliente/ChamadoCRUD">UC007 - Abrir Chamado</a></b>
+        					</li>
+        					
         					<li class="list-group-item">
         					<b><a href="<%=request.getContextPath()%>/cliente/MotoTaxistaCRUD?cmd=listar">UC004 - Gerenciar Mototaxistas<br></a></b>
         					</li>
@@ -45,7 +50,7 @@
         					</li>
         					
         					<li class="list-group-item">
-        					<b><a href="<%=request.getContextPath()%>/administrador/BandeiradaCRUD">UC007 - Gerenciar Bandeirada</a></b>
+        					<b><a href="<%=request.getContextPath()%>/administrador/BandeiradaCRUD">UC006 - Gerenciar Bandeirada</a></b>
         					</li>
         					
         					<li class="list-group-item">
@@ -71,6 +76,8 @@
         					<li class="list-group-item">
         					<b><a href="<%=request.getContextPath()%>/cliente/MototaxistaServlet2?cmd=listaemp"> UC002- Vizualizar Mototaxistas abaixo da média</a></b>
         					</li>
+        					
+        					
         					
         				</ul>
         			</div>

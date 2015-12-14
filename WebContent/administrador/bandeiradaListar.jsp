@@ -26,8 +26,8 @@
       		<div class="container">
        			 <div class="row">
          			 <div class="col-md-12">
-           				 <h1 class="text-center">UC004 - Manter Moto Taxista</h1>
-            			 <p class="text-center">Seja bem-vindo! Por favor, escolha um dos Mototaxistas para efetuar as manutenções desejadas ou adicione um novo:</p>
+           				 <h1 class="text-center">UC004 - Manter Bandeirada</h1>
+            			 <p class="text-center">Seja bem-vindo! Por favor, escolha uma Bandeirada para efetuar as manutenções desejadas ou adicione um novo:</p>
           			</div>
        			 </div>
       		</div>
@@ -37,7 +37,7 @@
 		<div id="main" class="container-fluid">
 			<div id="top" class="row">
 				<div class="col-md-3">
-    				<h2>Moto Taxistas cadastrados:</h2>
+    				<h2>Bandeirada cadastradas:</h2>
 				</div>
 				
 				<div class="col-md-3">

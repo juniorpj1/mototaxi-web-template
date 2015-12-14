@@ -65,7 +65,7 @@
 							<label for="razaoSocial"> Preço/KM: </label> <input
 								type="text" name="valorKM" value="${ban.valorKM}"
 								class="form-control" id="valorKM"
-								placeholder="Digite a razão social" /> <br />
+								placeholder="Digite o valor do quilômetro" /> <br />
 						</div>
 					</div>
 
