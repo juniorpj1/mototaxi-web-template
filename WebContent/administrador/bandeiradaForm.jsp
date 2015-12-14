@@ -1,41 +1,85 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-    
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-		<link rel="icon" href="resources/img/icone-uberlandia-mototaxi.ico">
-		<meta http-equiv="X-UA-Compatible" content="IE-edge">
-		<meta name="description" content="">
-		<meta name="author" content="Anna Carolina Novaes">
-		
-		<title>Uberlândia Mototáxi</title>
+	pageEncoding="ISO-8859-1"%>
 
-		<!--  +++++++++++ REFERENCIAS BASICAS DO BOOTSTRAP +++++++++++ -->
-		<%@ include file="/resources/includes/refs-bootstrap-inicio.jsp"%> 
-	</head>
-	<body>
-		<!--  +++++++++++ BARRA DE NAVEGACAO +++++++++++ -->
-		 <%@ include file="/resources/includes/barra-superior.jsp"%> 
-		
-<%-- 		Código : <input type="text" readonly="readonly" name="codBandeirada" value="${ban.codBandeirada}" /> <br /> <br />  --%>
-<%-- 			Preço Inicial : <input type="text" name="valorInicial" value="${ban.valorInicial}" /> <br /><br />  --%>
-<%-- 			Preço KM: <input type="text" name="valorKM" value="${ban.valorKM}" /> <br /><br />  --%>
-<!-- 			<input type="submit" value="Enviar" /> -->
-		
-		
-		
-		 <!--  +++++++++++ RODAPE +++++++++++ -->
-		 <%@ include file="/resources/includes/rodape.jsp"%> 
-		
-		 <!--  +++++++++++ REFERENCIAS ADICIONAIS DO BOOTSTRAP +++++++++++ -->
-		 <%@ include file="/resources/includes/refs-bootstrap-final.jsp"%> 
-		 
-		 <!--  +++++++++++ CODIGO DA JANELA MODAL DE CONFIRMAR EXCLUSAO +++++++++++ 
-		 <%@ include file="/resources/includes/confirmar-exclusao-modal.jsp"%>-->
-		
-	</body>
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link rel="icon" href="resources/img/icone-uberlandia-mototaxi.ico">
+<meta http-equiv="X-UA-Compatible" content="IE-edge">
+<meta name="description" content="">
+<meta name="author" content="Anna Carolina Novaes">
+<meta charset="UTF-8">
+
+<title>Uberlândia Mototáxi</title>
+
+<!--  +++++++++++ REFERENCIAS BASICAS DO BOOTSTRAP +++++++++++ -->
+<%@ include file="/resources/includes/refs-bootstrap-inicio.jsp"%>
+</head>
+
+<body>
+	<!--  +++++++++++ BARRA DE NAVEGACAO +++++++++++ -->
+	<%@ include file="/resources/includes/barra-superior.jsp"%>
+
+	<div id="main" class="container-fluid">
+		<div class="section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h1>Cadastro da Bandeirada</h1>
+						<p>Por gentileza, preencha os dados solicitados para que o
+							cadastro seja efetivado.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="section">
+			<div class="container">
+
+				<form method="post"
+					action="<%=request.getContextPath()%>/administrador/BandeiradaCRUD"
+					name="formEmpr">
+
+					<div class="row">
+						<div class="form group col-md-6">
+							<label for="codBandeirada"> Código: </label> <input type="text"
+								name="codBandeirada" value="${ban.codBandeirada}"
+								class="form-control" id="codBandeirada" readonly="readonly" /> <br />
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="form group col-md-6">
+							<label for="nomefantasia"> Preço Inicial: </label> <input
+								type="text" name="valorInicial" value="${ban.valorInicial}"
+								class="form-control" id="valorInicial"
+								placeholder="Digite o valor inicial da bandeirada" /> <br />
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="form group col-md-6">
+							<label for="razaoSocial"> Preço/KM: </label> <input
+								type="text" name="valorKM" value="${ban.valorKM}"
+								class="form-control" id="valorKM"
+								placeholder="Digite a razão social" /> <br />
+						</div>
+					</div>
+
+					<div id="actions" class="row">
+						<div class="col-md-12">
+							<button type="submit" class="btn btn-success btn-xs">Enviar</button>
+							<button type="reset" class="btn btn-danger btn-xs">Limpar</button>
+						</div>
+					</div>
+
+				</form>
+			</div>
+		</div>
+		'
+	</div>
+</body>
 </html>

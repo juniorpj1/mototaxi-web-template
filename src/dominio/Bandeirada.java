@@ -29,7 +29,7 @@ public class Bandeirada implements Serializable{
 	private List<Chamado> chamados;
 
 	public Bandeirada() {
-		chamados = new ArrayList<>();
+		this.chamados = new ArrayList<>();
 	}
 
 	public Bandeirada(Integer codBandeirada, BigDecimal valorInicial, BigDecimal valorKM) {
@@ -37,7 +37,7 @@ public class Bandeirada implements Serializable{
 		this.codBandeirada = codBandeirada;
 		this.valorInicial = valorInicial;
 		this.valorKM = valorKM;
-		chamados = new ArrayList<>();
+		this.chamados = new ArrayList<>();
 	}
 
 	public Integer getCodBandeirada() {

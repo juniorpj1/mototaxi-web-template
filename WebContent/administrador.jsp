@@ -10,7 +10,7 @@
 		<link rel="icon" href="resources/img/icone-uberlandia-mototaxi.ico">
 		<meta http-equiv="X-UA-Compatible" content="IE-edge">
 		<meta name="description" content="">
-		<meta name="author" content="Anna Carolina Novaes">
+		<meta name="author" content="Aparício Pedrosa Franco Junior">
 		
 		<title>Uberlândia Mototáxi</title>
 
@@ -45,7 +45,7 @@
         					</li>
         					
         					<li class="list-group-item">
-        					<b>UC008 - Gerenciar Bandeirada</b>
+        					<b><a href="<%=request.getContextPath()%>/administrador/BandeiradaCRUD">UC007 - Gerenciar Bandeirada</a></b>
         					</li>
         					
         					<li class="list-group-item">

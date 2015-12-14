@@ -7,7 +7,6 @@ import javax.persistence.Query;
 
 import dao.ClienteDao;
 import dominio.Cliente;
-import dominio.MotoTaxista;
 
 public class ClienteDaoImpl implements ClienteDao {
 

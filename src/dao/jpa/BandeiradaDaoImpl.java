@@ -38,7 +38,7 @@ public class BandeiradaDaoImpl implements BandeiradaDao {
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<Bandeirada> buscarTodos(){
-		String jpql = "SELECT x FROM Artista x";
+		String jpql = "SELECT x FROM Bandeirada x";
 		Query query = em.createQuery(jpql);
 		return query.getResultList();
 	}
