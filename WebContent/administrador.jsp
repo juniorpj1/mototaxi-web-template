@@ -38,7 +38,7 @@
         				<ul class="list-group">
         					
         					<li class="list-group-item">
-        					<b><a href="<%=request.getContextPath()%>/cliente/ChamadoCRUD">UC007 - Abrir Chamado</a></b>
+        					<b><a href="<%=request.getContextPath()%>/administrador/ChamadoCRUD">UC007 - Abrir Chamado</a></b>
         					</li>
         					
         					<li class="list-group-item">

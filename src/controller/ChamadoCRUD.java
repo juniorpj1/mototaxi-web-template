@@ -41,6 +41,7 @@ public class ChamadoCRUD extends HttpServlet {
 
 		String forward = "";
 		String cmd = request.getParameter("cmd");
+		
 		if (cmd == null || cmd.equalsIgnoreCase(""))
 			cmd = "listar";
 		if (cmd.equalsIgnoreCase("deletar")) {

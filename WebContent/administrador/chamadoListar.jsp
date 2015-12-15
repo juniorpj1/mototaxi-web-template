@@ -45,7 +45,7 @@
 
 			<div class="col-md-3">
 				<a class="btn btn-success btn-xs pull-right h2"
-					href="<%=request.getContextPath()%>/cliente/ChamadoCRUD?cmd=escolherBandeirada">Adicionar
+					href="<%=request.getContextPath()%>/administrador/ChamadoCRUD?cmd=escolherBandeirada">Adicionar
 					novo Chamado</a>
 			</div>
 		</div>
