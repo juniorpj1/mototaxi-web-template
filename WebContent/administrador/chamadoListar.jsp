@@ -43,7 +43,7 @@
 
 			<div class="col-md-3"></div>
 
-			<div class="col-md-3">
+			<div class="col-md-3" style="margin-left: 936px; margin-bottom: 30px">
 				<a class="btn btn-success btn-xs pull-right h2"
 					href="<%=request.getContextPath()%>/administrador/ChamadoCRUD?cmd=escolherBandeirada">Adicionar
 					novo Chamado</a>
@@ -102,8 +102,6 @@
 	<!--  +++++++++++ REFERENCIAS ADICIONAIS DO BOOTSTRAP +++++++++++ -->
 	<%@ include file="/resources/includes/refs-bootstrap-final.jsp"%>
 
-	<!--  +++++++++++ CODIGO DA JANELA MODAL DE CONFIRMAR EXCLUSAO +++++++++++ 
-		 <%@ include file="/resources/includes/confirmar-exclusao-modal.jsp"%>-->
 
 </body>
 </html>

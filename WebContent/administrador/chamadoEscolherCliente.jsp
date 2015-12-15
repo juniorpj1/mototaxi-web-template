@@ -1,27 +1,70 @@
-<?xml version="1.0" encoding="ISO-8859-1" ?>
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+
+<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
-<title>Teste CRUD</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link rel="icon" href="resources/img/icone-uberlandia-mototaxi.ico">
+<meta http-equiv="X-UA-Compatible" content="IE-edge">
+<meta name="description" content="">
+<meta name="author" content="Aparício Pedrosa Franco Junior">
+
+<title>Uberlândia Mototáxi</title> 
+<!--  +++++++++++ REFERENCIAS BASICAS DO BOOTSTRAP +++++++++++ -->
+<%@ include file="/resources/includes/refs-bootstrap-inicio.jsp"%>
 </head>
 <body>
-	<h1>Inserir novo Chamado</h1>
-	<hr />
-	<h2>Escolha o Cliente</h2>
-	<br />
-	<table border=1>
-		<thead>
+	<!--  +++++++++++ BARRA DE NAVEGACAO +++++++++++ -->
+	<%@ include file="/resources/includes/barra-superior.jsp"%>
+
+	<!--  +++++++++++ SECAO PRINCIPAL +++++++++++ -->
+	<div class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1 class="text-center">UC013 - Solicitar Chamado</h1>
+					<p class="text-center">Seja bem-vindo! Por favor, escolha um Cliente para abrir um novo Chamado:</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--  +++++++++++ SECAO PRINCIPAL +++++++++++ -->
+	<div id="main" class="container-fluid">
+		<div id="top" class="row">
+			<div class="col-md-3">
+				<h2>Clientes cadastrados:</h2>
+			</div>
+
+			<div class="col-md-12" style="padding-left: 510px">
+
+
+			
+
+
+			</div>
+
+			<!--  <div class="col-md-3">
+    				<a class="btn btn-success btn-xs pull-right h2" href="<%=request.getContextPath()%>/cliente/EmpresaCRUD?cmd=novo"
+				 >Adicionar nova Empresa</a>
+				</div> -->
+		</div>
+
+		<!--  +++++++++ LISTAGEM ++++++++ -->
+		<div id="list" class="row">
+
+			<div class="table-responsive col-md-12">
+				<table class="table table-striped" cellspacing="0" cellpadding="0">
+					<thead>
 			<tr>
 				<th>Código</th>
 				<th>Nome</th>
 				<th>Telefone</th>
 				<th>CPF</th>
-				<th>Escolher</th>
+				<th>Ação</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -31,12 +74,27 @@
 					<td>${x.nome}</td>
 					<td>${x.telefone}</td>
 					<td>${x.cpf}</td>
-					<td><a
-						href="<%=request.getContextPath()%>/administrador/ChamadoCRUD?cmd=escolherMototaxista&codBandeirada=${codBandeirada.codBandeirada}&codCliente=${x.codCliente}">Escolher
-							este</a></td>
+					<td><a class="btn btn-success btn-xs" 
+						href="<%=request.getContextPath()%>/administrador/ChamadoCRUD?cmd=escolherMototaxista&codBandeirada=${codBandeirada.codBandeirada}&codCliente=${x.codCliente}">Escolher</a></td>
 				</tr>
 			</c:forEach>
 		</tbody>
-	</table>
+				</table>
+
+			</div>
+
+		</div>
+		<!-- /#list -->
+	</div>
+
+
+	<!--  +++++++++++ RODAPE +++++++++++ -->
+	<%@ include file="/resources/includes/rodape.jsp"%>
+
+	<!--  +++++++++++ REFERENCIAS ADICIONAIS DO BOOTSTRAP +++++++++++ -->
+	<%@ include file="/resources/includes/refs-bootstrap-final.jsp"%>
+
+
+
 </body>
 </html>

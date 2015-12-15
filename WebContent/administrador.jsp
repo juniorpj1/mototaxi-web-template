@@ -77,6 +77,10 @@
         					<b><a href="<%=request.getContextPath()%>/cliente/MototaxistaServlet2?cmd=listaemp"> UC002- Vizualizar Mototaxistas abaixo da média</a></b>
         					</li>
         					
+        					<li class="list-group-item">
+        					<b><a href="<%=request.getContextPath()%>/cliente/ClienteCRUD?cmd=listarcli">UC09 - Cadastrar cliente<br></a></b>
+        					</li>  
+        					
         					
         					
         				</ul>

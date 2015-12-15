@@ -88,7 +88,7 @@
 					<div class="row">
 						<div class="form group col-md-6">
 							<label for="mototaxistaNome"> Mototaxista: </label> <input type="text" name="motoTaxistaNome"
-								value="${cha.motoTaxista.nome}" class="form-control" id="motoTaxistaNome" /> <br />
+								readonly="readonly" value="${cha.motoTaxista.nome}" class="form-control" id="motoTaxistaNome" /> <br />
 						</div>
 					</div>
 
@@ -104,14 +104,7 @@
 						</div>
 					</div>
 					
-					
 
-
-					<!-- Exemplo de data com JSTL: 
-		 Data do pedido: <input
-		 type="text" name="dataPedido"
-		 value="<fmt:formatDate pattern="dd/MM/yyyy" value="${pedido.dataPedido}" />" /> <br />
-		 -->
 				</form>
 			</div>
 		</div>
