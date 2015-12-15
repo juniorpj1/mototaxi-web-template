@@ -29,7 +29,10 @@
 					<td>${x.codBandeirada}</td>
 					<td>${x.valorInicial}</td>
 					<td>${x.valorKM}</td>
-					<td><a class="btn btn-success btn-xs" href="<%=request.getContextPath()%>/administrador/BandeiradaCRUD?cmd=editar&cod=${x.codBandeirada}">Editar</a></td>
+					<td>
+			<a href="<%=request.getContextPath()%>/administrador/ChamadoCRUD?cmd=escolherCliente&codBandeirada=${x.codBandeirada}">Escolher
+							esta</a>
+					</td>
 				</tr>
 			</c:forEach>
 		</tbody>

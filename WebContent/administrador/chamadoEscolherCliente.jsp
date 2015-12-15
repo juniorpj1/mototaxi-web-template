@@ -32,7 +32,7 @@
 					<td>${x.telefone}</td>
 					<td>${x.cpf}</td>
 					<td><a
-						href="<%=request.getContextPath()%>/cliente/ChamadoCRUD?cmd=escolherMototaxista&codBandeirada=${codBandeirada.codBandeirada}&codCliente=${x.codCliente}">Escolher
+						href="<%=request.getContextPath()%>/administrador/ChamadoCRUD?cmd=escolherMototaxista&codBandeirada=${codBandeirada.codBandeirada}&codCliente=${x.codCliente}">Escolher
 							este</a></td>
 				</tr>
 			</c:forEach>

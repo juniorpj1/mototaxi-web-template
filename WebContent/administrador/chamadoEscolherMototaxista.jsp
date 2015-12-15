@@ -32,7 +32,7 @@
 					<td>${x.placa}</td>
 					<td>${x.empresa.nomeFantasia}</td>
 					<td><a
-						href="<%=request.getContextPath()%>/cliente/ChamadoCRUD?cmd=novo&codCliente=${codCliente.codCliente}&codBandeirada=${codBandeirada.codBandeirada}&codMototaxista=${x.codMotoTaxista}">Escolher
+						href="<%=request.getContextPath()%>/administrador/ChamadoCRUD?cmd=novo&codCliente=${codCliente.codCliente}&codBandeirada=${codBandeirada.codBandeirada}&codMototaxista=${x.codMotoTaxista}">Escolher
 							este</a></td>
 				</tr>
 			</c:forEach>

@@ -1,30 +1,121 @@
-<?xml version="1.0" encoding="ISO-8859-1" ?>
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+
+<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
-<title>Teste CRUD</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link rel="icon" href="resources/img/icone-uberlandia-mototaxi.ico">
+<meta http-equiv="X-UA-Compatible" content="IE-edge">
+<meta name="description" content="">
+<meta name="author" content="Anna Carolina Novaes">
+<meta charset="UTF-8">
+
+<title>Uberlândia Mototáxi</title>
+
+<!--  +++++++++++ REFERENCIAS BASICAS DO BOOTSTRAP +++++++++++ -->
+<%@ include file="/resources/includes/refs-bootstrap-inicio.jsp"%>
 </head>
+
 <body>
-	<h1>Teste de CRUD</h1>
-	<h2>Entre com os dados do chamado</h2>
-	<form method="post"
-		action="<%=request.getContextPath()%>/cliente/ChamadoCRUD"
-		name="formCha">
-			Código : <input type="text" readonly="readonly" name="codChamado" value="${cha.codChamado}" /> <br /> <br /> 
-			Origem : <input type="text" name="origem" value="${cha.origem}" /> <br /><br /> 
-			Destino: <input type="text" name="destino" value="${cha.destino}" /> <br /><br />
-			Bandeirada : <input type="text" readonly="readonly" name="bandeiradaValor" value="${cha.bandeirada.valorInicial}" /> <br /> <br /> 
-			Cliente : <input type="text" readonly="readonly" name="clienteNome" value="${cha.cliente.nome}" /> <br /> <br /> 
-			MotoTaxista : <input type="text" readonly="readonly" name="motoTaxistaNome" value="${cha.motoTaxista.nome}" /> <br /> <br /> 
-			<input type="hidden" name="bandeirada" value="${cha.bandeirada.codBandeirada}" />
-			<input type="hidden" name="cliente" value="${cha.cliente.codCliente}" />
-			<input type="hidden" name="motoTaxista" value="${cha.motoTaxista.codMotoTaxista}" />
-			<input type="submit" value="Enviar" />
-	</form>
+	<!--  +++++++++++ BARRA DE NAVEGACAO +++++++++++ -->
+	<%@ include file="/resources/includes/barra-superior.jsp"%>
+
+	<div id="main" class="container-fluid">
+		<div class="section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h1>Cadastro do Chamado</h1>
+						<p>Por gentileza, preencha os dados solicitados para que o
+							cadastro seja efetivado.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="section">
+			<div class="container">
+
+				<form method="post"
+					action="<%=request.getContextPath()%>/administrador/ChamadoCRUD"
+					name="formCha">
+
+					<div class="row">
+						<div class="form group col-md-6">
+							<label for="codChamado"> Código: </label> <input type="text"
+								name="codChamado" value="${cha.codChamado}"
+								class="form-control" id="codChamado" readonly="readonly" /> <br />
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="form group col-md-6">
+							<label for="origem"> Origem: </label> <input
+								type="text" name="origem" value="${cha.origem}"
+								class="form-control" id="origem"
+								placeholder="Digite a origem do Chamado" /> <br />
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="form group col-md-6">
+							<label for="destino"> Destino: </label> <input
+								type="text" name="destino" value="${cha.destino}"
+								class="form-control" id="destino"
+								placeholder="Digite o destino do Chamado" /> <br />
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="form group col-md-6">
+							<label for="bandeirada"> Bandeirada: </label> <input type="text"
+								name="bandeiradaValor" value="${cha.bandeirada.valorInicial}" class="form-control"
+								readonly="readonly"	id="bandeirada" /> <br />
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="form group col-md-6">
+							<label for="clienteNome"> Cliente: </label> <input type="text"
+								name="clienteNome" value="${cha.cliente.nome}" class="form-control"
+								id="clienteNome" readonly="readonly" /> <br />
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="form group col-md-6">
+							<label for="mototaxistaNome"> Mototaxista: </label> <input type="text" name="motoTaxistaNome"
+								value="${cha.motoTaxista.nome}" class="form-control" id="motoTaxistaNome" /> <br />
+						</div>
+					</div>
+
+					<input type="hidden" name="bandeirada" value="${cha.bandeirada.codBandeirada}" />
+					<input type="hidden" name="cliente" value="${cha.cliente.codCliente}" />
+					<input type="hidden" name="motoTaxista" value="${cha.motoTaxista.codMotoTaxista}" />
+					
+					<div id="actions" class="row">
+						<div class="col-md-12">
+							<button type="submit" class="btn btn-success btn-xs">Enviar</button>
+							<a href="<%=request.getContextPath()%>/index.jsp"
+								class="btn btn-danger btn-xs">Cancelar</a>
+						</div>
+					</div>
+					
+					
+
+
+					<!-- Exemplo de data com JSTL: 
+		 Data do pedido: <input
+		 type="text" name="dataPedido"
+		 value="<fmt:formatDate pattern="dd/MM/yyyy" value="${pedido.dataPedido}" />" /> <br />
+		 -->
+				</form>
+			</div>
+		</div>
+		'
+	</div>
 </body>
 </html>
