@@ -73,7 +73,7 @@
 						<div class="form group col-md-6">
 							<label for="telefone"> Telefone </label> <input type="text"
 								name="telefone" value="${empr.telefone}" class="form-control"
-								id="telefone" /> <br />
+								id="telefone" placeholder="Digite o telefone"/> <br />
 						</div>
 					</div>
 
@@ -81,14 +81,14 @@
 						<div class="form group col-md-6">
 							<label for="email"> E-mail </label> <input type="text"
 								name="email" value="${empr.email}" class="form-control"
-								id="email" /> <br />
+								id="email" placeholder="Digite o e-mail" /> <br />
 						</div>
 					</div>
 
 					<div class="row">
 						<div class="form group col-md-6">
 							<label for="cnpj"> CNPJ </label> <input type="text" name="cnpj"
-								value="${empr.cnpj}" class="form-control" id="cnpj" /> <br />
+								value="${empr.cnpj}" class="form-control" id="cnpj" placeholder="Digite o CNPJ"/>  <br />
 						</div>
 					</div>
 
@@ -96,7 +96,7 @@
 						<div class="form group col-md-6">
 							<label for="logradouro"> Logradouro </label> <input type="text"
 								name="logradouro" value="${empr.logradouro}"
-								class="form-control" id="logradouro" /> <br />
+								class="form-control" id="logradouro" placeholder="Digite o logradouro"/> <br />
 						</div>
 					</div>
 
@@ -104,7 +104,7 @@
 						<div class="form group col-md-6">
 							<label for="numero"> Número </label> <input type="text"
 								name="numero" value="${empr.numero}" class="form-control"
-								id="numero" /> <br />
+								id="numero" placeholder="Digite o número"/> <br />
 						</div>
 					</div>
 
@@ -112,14 +112,14 @@
 						<div class="form group col-md-6">
 							<label for="bairro"> Bairro </label> <input type="text"
 								name="bairro" value="${empr.bairro}" class="form-control"
-								id="bairro" /> <br />
+								id="bairro" placeholder="Digite o nome do bairro"/> <br />
 						</div>
 					</div>
 
 					<div class="row">
 						<div class="form group col-md-6">
 							<label for="cep"> CEP </label> <input type="text" name="cep"
-								value="${empr.cep}" class="form-control" id="cep" /> <br />
+								value="${empr.cep}" class="form-control" id="cep" placeholder="Digite o CEP"/> <br />
 						</div>
 					</div>
 
