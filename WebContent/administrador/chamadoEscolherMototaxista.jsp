@@ -12,7 +12,8 @@
 <meta name="description" content="">
 <meta name="author" content="Aparício Pedrosa Franco Junior">
 
-<title>Uberlândia Mototáxi</title> <!--  +++++++++++ REFERENCIAS BASICAS DO BOOTSTRAP +++++++++++ -->
+<title>Uberlândia Mototáxi</title>
+<!--  +++++++++++ REFERENCIAS BASICAS DO BOOTSTRAP +++++++++++ -->
 <%@ include file="/resources/includes/refs-bootstrap-inicio.jsp"%>
 </head>
 
@@ -37,7 +38,7 @@
 	<div id="main" class="container-fluid">
 		<div id="top" class="row">
 			<div class="col-md-3">
-				<h2>Clientes cadastrados:</h2>
+				<h2>Mototaxistas cadastrados:</h2>
 			</div>
 
 			<div class="col-md-12" style="padding-left: 510px"></div>
@@ -64,15 +65,20 @@
 					</thead>
 					<tbody>
 						<c:forEach items="${lista}" var="x">
-							<tr>
-								<td>${x.codMotoTaxista}</td>
-								<td>${x.nome}</td>
-								<td>${x.placa}</td>
-								<td>${x.empresa.nomeFantasia}</td>
-								<td><a class="btn btn-success btn-xs"
-									href="<%=request.getContextPath()%>/administrador/ChamadoCRUD?cmd=novo&codCliente=${codCliente.codCliente}&codBandeirada=${codBandeirada.codBandeirada}&codMototaxista=${x.codMotoTaxista}">Escolher
-										este</a></td>
-							</tr>
+							<c:choose>
+								<c:when test="${x.disponivel == true}">
+									<tr>
+										<td>${x.codMotoTaxista}</td>
+										<td>${x.nome}</td>
+										<td>${x.placa}</td>
+										<td>${x.empresa.nomeFantasia}</td>
+										<td><a class="btn btn-success btn-xs"
+											href="<%=request.getContextPath()%>/administrador/ChamadoCRUD?cmd=novo&codCliente=${codCliente.codCliente}&codBandeirada=${codBandeirada.codBandeirada}&codMototaxista=${x.codMotoTaxista}">Escolher
+												este</a></td>
+									</tr>
+								</c:when>
+							</c:choose>
+
 						</c:forEach>
 					</tbody>
 				</table>
@@ -82,11 +88,6 @@
 		</div>
 		<!-- /#list -->
 	</div>
-
-
-	<!--  +++++++++++ RODAPE +++++++++++ -->
-	<%@ include file="/resources/includes/rodape.jsp"%>
-
 	<!--  +++++++++++ REFERENCIAS ADICIONAIS DO BOOTSTRAP +++++++++++ -->
 	<%@ include file="/resources/includes/refs-bootstrap-final.jsp"%>
 

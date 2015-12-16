@@ -29,10 +29,7 @@
 		 		<b> <a class="btn btn-success btn-xs" href="<%=request.getContextPath()%>/cliente/EmpresaCRUD?cmd=listar">Voltar ao caso de uso<br></a></b>
 		 	</div>
 		 </div>
-		 
-		 <!--  +++++++++++ RODAPE +++++++++++ -->
-		 <%@ include file="/resources/includes/rodape.jsp"%> 
-		
+	
 		 <!--  +++++++++++ REFERENCIAS ADICIONAIS DO BOOTSTRAP +++++++++++ -->
 		 <%@ include file="/resources/includes/refs-bootstrap-final.jsp"%> 
 		 

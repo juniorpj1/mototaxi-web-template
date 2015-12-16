@@ -49,6 +49,8 @@ import servico.ServicoFactory;
 						request.setAttribute("erro", s.getMessage());
 						forward = ERRO;
 					}
+					RequestDispatcher rd = request.getRequestDispatcher(forward);
+					rd.forward(request, response);
 			}
 
 			else if (cmd.equalsIgnoreCase("editar")) {
@@ -67,6 +69,8 @@ import servico.ServicoFactory;
 						request.setAttribute("Erro de execução: ", e.getMessage());
 						forward = ERRO;
 					}
+					RequestDispatcher rd = request.getRequestDispatcher(forward);
+					rd.forward(request, response);
 			}
 			
 			else if (cmd.equalsIgnoreCase("visualizar")) {
@@ -81,6 +85,8 @@ import servico.ServicoFactory;
 					request.setAttribute("Erro de execução: ", e.getMessage());
 					forward = ERRO;
 				}
+				RequestDispatcher rd = request.getRequestDispatcher(forward);
+				rd.forward(request, response);
 			}
 
 			else if (cmd.equalsIgnoreCase("listar")) {

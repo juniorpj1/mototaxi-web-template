@@ -64,7 +64,6 @@
 						<th>Código</th>
 						<th>Nome</th>
 						<th>CPF</th>
-						<th>Senha</th>
 						<th>Telefone</th>
 					</tr>
 				</thead>
@@ -74,7 +73,6 @@
 							<td>${x.codCliente}</td>
 							<td>${x.nome}</td>
 							<td>${x.cpf}</td>
-							<td>${x.senha}</td>
 							<td>${x.telefone}</td>
 						</tr>
 					</c:forEach>
@@ -84,11 +82,6 @@
 		</div>
 
 	</div>
-	<!-- /#list -->
-
-	<!--  +++++++++++ RODAPE +++++++++++ -->
-	<%@ include file="/resources/includes/rodape.jsp"%>
-
 	<!--  +++++++++++ REFERENCIAS ADICIONAIS DO BOOTSTRAP +++++++++++ -->
 	<%@ include file="/resources/includes/refs-bootstrap-final.jsp"%>
 

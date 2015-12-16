@@ -27,11 +27,7 @@
 		 		<h3 class="page-header"> Inserido com sucesso! Código: ${mot.codMotoTaxista}</h3>
 		 		<b> <a class="btn btn-success btn-xs" href="<%=request.getContextPath()%>/cliente/MotoTaxistaCRUD?cmd=listar">Voltar ao caso de uso<br></a></b>
 		 	</div>
-		 </div>
-		 
-		 <!--  +++++++++++ RODAPE +++++++++++ -->
-		 <%@ include file="/resources/includes/rodape.jsp"%> 
-		
+		 </div>	
 		 <!--  +++++++++++ REFERENCIAS ADICIONAIS DO BOOTSTRAP +++++++++++ -->
 		 <%@ include file="/resources/includes/refs-bootstrap-final.jsp"%> 
 		 

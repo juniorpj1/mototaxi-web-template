@@ -74,10 +74,10 @@
 				                <tr>
 				                    <th>Código</th>
 									<th>Nome Fantasia</th>
-									<th style="text-align: center;">Razão Social</th>
+									<th style="text-align: left;">Razão Social</th>
 									<th>Telefone</th>
 									<th style="text-align: center;">Ação</th>
-									<th colspan="2" style="text-align: center; ">Outras ações</th> 
+									<th colspan="2" style="padding-left: 260px">Outras ações</th> 
 				                 	
 				                 </tr>
 				            </thead>
@@ -90,12 +90,12 @@
 									<td>${x.telefone}</td>
 														
 									<td>                   
-				<a style="margin-left: 30px" class="btn btn-warning btn-xs" href="<%=request.getContextPath()%>/cliente/EmpresaCRUD?cmd=visualizar&cod=${x.codEmpresa}">Visualizar</a>
+				<a style="margin-left: 100px" class="btn btn-warning btn-xs" href="<%=request.getContextPath()%>/cliente/EmpresaCRUD?cmd=visualizar&cod=${x.codEmpresa}">Visualizar</a>
 				<a class="btn btn-warning btn-xs" href="<%=request.getContextPath()%>/cliente/EmpresaCRUD?cmd=editar&cod=${x.codEmpresa}">Editar</a>
 				<a class="btn btn-warning btn-xs" href="<%=request.getContextPath()%>/cliente/EmpresaCRUD?cmd=deletar&cod=${x.codEmpresa}">Excluir</a>
 									</td>
 				<td>
-				<a style="margin-left: 60px" class="btn btn-danger btn-xs"
+				<a style="margin-left: 70px" class="btn btn-danger btn-xs"
 					href="<%=request.getContextPath()%>/cliente/MotoTaxistaCRUD?cmd=chamados&cod=${x.codEmpresa}">Chamados
 					por período</a>
 			
@@ -116,12 +116,7 @@
 				     </div>
 				    
 				 </div> <!-- /#list -->
-      </div>
-
-
-		 <!--  +++++++++++ RODAPE +++++++++++ -->
-		 <%@ include file="/resources/includes/rodape.jsp"%> 
-		
+      </div>		
 		 <!--  +++++++++++ REFERENCIAS ADICIONAIS DO BOOTSTRAP +++++++++++ -->
 		 <%@ include file="/resources/includes/refs-bootstrap-final.jsp"%> 
 		 

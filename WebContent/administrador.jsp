@@ -35,8 +35,7 @@
         	<div class="container">
         		<div class="row">
         			<div class="col-md-12">
-        				<ul class="list-group">
-        					
+        				<ul class="list-group">		
         					<li class="list-group-item">
         					<b><a href="<%=request.getContextPath()%>/administrador/ChamadoCRUD">UC007 - Abrir Chamado</a></b>
         					</li>
@@ -79,10 +78,7 @@
         					
         					<li class="list-group-item">
         					<b><a href="<%=request.getContextPath()%>/cliente/ClienteCRUD?cmd=listarcli">UC09 - Cadastrar cliente<br></a></b>
-        					</li>  
-        					
-        					
-        					
+        					</li>    					     									
         				</ul>
         			</div>
         		</div>

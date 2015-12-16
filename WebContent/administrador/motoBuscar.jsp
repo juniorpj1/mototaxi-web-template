@@ -51,16 +51,12 @@
 
 			<div id="actions" class="row">
 				<div class="col-md-12">
-					<button type="submit" class="btn btn-primary">Pesquisar</button>
-					<button type="reset" class="btn btn-default">Limpar</button>
+					<button type="submit" class="btn btn-success btn-xs">Pesquisar</button>
+					<button type="reset" class="btn btn-warning btn-xs">Limpar</button>
 				</div>
 			</div>
 		</form>
 	</div>
-
-	<!--  +++++++++++ RODAPE +++++++++++ -->
-	<%@ include file="/resources/includes/rodape.jsp"%>
-
 	<!--  +++++++++++ REFERENCIAS ADICIONAIS DO BOOTSTRAP +++++++++++ -->
 	<%@ include file="/resources/includes/refs-bootstrap-final.jsp"%>
 

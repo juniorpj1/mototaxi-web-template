@@ -72,9 +72,9 @@
 
 					<div class="row">
 						<div class="form group col-md-6">
-							<label for="senha"> Senha: </label> <input type="text"
+							<label for="senha"> Senha: </label> <input
 								name="senha" value="${cliente.senha}" class="form-control"
-								id="senha" placeholder="Digite uma senha" /> <br />
+								id="senha" placeholder="Digite uma senha" type="password" /> <br />
 						</div>
 					</div>
 

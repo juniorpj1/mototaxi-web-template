@@ -91,12 +91,6 @@
 
 		</div>
 	</div>
-	<!-- /#bottom -->
-
-
-	<!--  +++++++++++ RODAPE +++++++++++ -->
-	<%@ include file="/resources/includes/rodape.jsp"%>
-
 	<!--  +++++++++++ REFERENCIAS ADICIONAIS DO BOOTSTRAP +++++++++++ -->
 	<%@ include file="/resources/includes/refs-bootstrap-final.jsp"%>
 

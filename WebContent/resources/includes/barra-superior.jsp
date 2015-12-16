@@ -22,7 +22,9 @@
                 </div>
                 <div class="collapse navbar-collapse" id="navbar-ex-collapse">
                     <ul class="nav navbar-nav navbar-right">
-                       
+                       <li>
+                            <a href="/1-mototaxi-web/index.jsp">Página Inicial<br></a>
+                        </li>
                       	 <li>
                             <a href="/1-mototaxi-web/administrador.jsp">Painel de Controle<br></a>
                         </li>

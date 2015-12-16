@@ -35,6 +35,7 @@ public class MotoTaxistaCRUD extends HttpServlet {
 	private static String LISTAR_CHAMADO = "/administrador/listarChamado.jsp";
 	private static String FORM_EMPRESA = "/administrador/dataChamadoForm.jsp";
 	private static String ERRO = "/publico/erro.jsp";
+	private static String ERRO2 = "/administrador/listarMototaxista.jsp";
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
@@ -80,7 +81,7 @@ public class MotoTaxistaCRUD extends HttpServlet {
 				}
 			} catch (RuntimeException e) {
 				request.setAttribute("Erro de execução: ", e.getMessage());
-				forward = ERRO;
+				forward = ERRO2;
 			}
 			RequestDispatcher rd = request.getRequestDispatcher(forward);
 			rd.forward(request, response);
@@ -226,10 +227,10 @@ public class MotoTaxistaCRUD extends HttpServlet {
 			forward = LISTAR;
 		} catch (ServicoException s) {
 			request.setAttribute("erro", s.getMessage());
-			forward = ERRO;
+			forward = ERRO2;
 		} catch (RuntimeException e) {
 			request.setAttribute("erro", e.getMessage());
-			forward = ERRO;
+			forward = ERRO2;
 		}
 
 		// Listar chamados entre período - Aparício - UC05
