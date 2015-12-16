@@ -44,7 +44,7 @@
 					name="formEmpr">
 
 					<div class="row">
-						<div class="form group col-md-6">
+						<div class="form group col-md-6" style="visibility: hidden;">
 							<label for="codEmpresa"> Código: </label> <input type="text"
 								name="codEmpresa" value="${empr.codEmpresa}"
 								class="form-control" id="codEmpresa" readonly="readonly" /> <br />

@@ -171,6 +171,8 @@ public class MotoTaxistaCRUD extends HttpServlet {
 				request.setAttribute("erro", "Erro de execução: " + e.getMessage());
 				forward = ERRO;
 			}
+			RequestDispatcher rd = request.getRequestDispatcher(forward);
+			rd.forward(request, response);
 		}
 
 		// Listar todas as empresas - Aparício - UC05

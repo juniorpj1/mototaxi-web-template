@@ -36,35 +36,27 @@
     	<!--  +++++++++++ SECAO PRINCIPAL +++++++++++ -->
 		<div id="main" class="container-fluid">
 			<div id="top" class="row">
-				<div class="col-md-3">
-    				<h2>Empresas cadastradas:</h2>
-				</div>
+				
 				
 				<div class="col-md-12" style="padding-left: 510px">
     			
     			
     			<!--  <div class="col-md-6"> -->
-     				<div class="input-group h2">
-        				<a style="margin-left: 10px" class="btn btn-warning btn-xs pull-right h2"
+     				<div class="input-group h2" >
+        				<a style="margin-left: 600px; margin-bottom: 0px;" class="btn btn-success btn-xs pull-right h2"
 					href="<%=request.getContextPath()%>/cliente/EmpresaCRUD?cmd=novo&codEmpresa=${x.codEmpresa}">Adicionar
 					nova Empresa</a>
 					
 					
-			<a style="margin-left: 10px" class="btn btn-success btn-xs pull-right h2"
-					href="<%=request.getContextPath()%>/cliente/MotoTaxistaCRUD?cmd=chamados&cod=${x.codEmpresa}">Chamados
-					por período</a>
 			
-			<a style="margin-left: 10px" class="btn btn-success btn-xs pull-right h2"
-								href="<%=request.getContextPath()%>/cliente/MototaxistaServlet?cmd=acimamedia&cod=${x.codEmpresa}">Mototaxistas
-									acima da média</a>
-			
-			<a style="margin-left: 10px" class="btn btn-success btn-xs pull-right h2"
-			href="<%=request.getContextPath()%>/cliente/MototaxistaServlet2?cmd=abaixomedia&cod=${x.codEmpresa}">Mototaxistas
-									abaixo da média</a>
      				</div>
 				<!-- </div> -->
     			
     			 	
+				</div>
+				
+				<div class="col-md-3">
+    				<h2>Empresas cadastradas:</h2>
 				</div>
 				
 				<!--  <div class="col-md-3">
@@ -82,9 +74,11 @@
 				                <tr>
 				                    <th>Código</th>
 									<th>Nome Fantasia</th>
-									<th>Razão Social</th>
+									<th style="text-align: center;">Razão Social</th>
 									<th>Telefone</th>
-									<th colspan="2">Ação</th> 
+									<th style="text-align: center;">Ação</th>
+									<th colspan="2" style="text-align: center; ">Outras ações</th> 
+				                 	
 				                 </tr>
 				            </thead>
 				            <tbody>
@@ -95,10 +89,24 @@
 									<td>${x.razaoSocial}</td>
 									<td>${x.telefone}</td>
 														
-				                   <td>
-				<a class="btn btn-success btn-xs" href="<%=request.getContextPath()%>/cliente/EmpresaCRUD?cmd=visualizar&cod=${x.codEmpresa}">Visualizar</a>
+									<td>                   
+				<a style="margin-left: 30px" class="btn btn-warning btn-xs" href="<%=request.getContextPath()%>/cliente/EmpresaCRUD?cmd=visualizar&cod=${x.codEmpresa}">Visualizar</a>
 				<a class="btn btn-warning btn-xs" href="<%=request.getContextPath()%>/cliente/EmpresaCRUD?cmd=editar&cod=${x.codEmpresa}">Editar</a>
-				<a class="btn btn-danger btn-xs" href="<%=request.getContextPath()%>/cliente/EmpresaCRUD?cmd=deletar&cod=${x.codEmpresa}">Excluir</a>
+				<a class="btn btn-warning btn-xs" href="<%=request.getContextPath()%>/cliente/EmpresaCRUD?cmd=deletar&cod=${x.codEmpresa}">Excluir</a>
+									</td>
+				<td>
+				<a style="margin-left: 60px" class="btn btn-danger btn-xs"
+					href="<%=request.getContextPath()%>/cliente/MotoTaxistaCRUD?cmd=chamados&cod=${x.codEmpresa}">Chamados
+					por período</a>
+			
+			<a style="margin-left: 0px" class="btn btn-danger btn-xs"
+								href="<%=request.getContextPath()%>/cliente/MototaxistaServlet?cmd=acimamedia&cod=${x.codEmpresa}">Mototaxistas
+									acima da média</a>
+			
+			<a style="margin-left: 0px" class="btn btn-danger btn-xs"
+			href="<%=request.getContextPath()%>/cliente/MototaxistaServlet2?cmd=abaixomedia&cod=${x.codEmpresa}">Mototaxistas
+									abaixo da média</a>
+				
 				</td>
 				                </tr>
 							 </c:forEach>

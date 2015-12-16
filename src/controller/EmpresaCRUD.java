@@ -91,6 +91,8 @@ import servico.ServicoFactory;
 					request.setAttribute("erro", "Erro de execução: " + e.getMessage());
 					forward = ERRO;
 				}
+				RequestDispatcher rd = request.getRequestDispatcher(forward);
+				rd.forward(request, response);
 			}
 
 			else if (cmd.equalsIgnoreCase("novo")) {
@@ -104,9 +106,10 @@ import servico.ServicoFactory;
 						request.setAttribute("erro", "Erro de execução: " + e.getMessage());
 						forward = ERRO;
 					}
+					RequestDispatcher rd = request.getRequestDispatcher(forward);
+					rd.forward(request, response);
 				}
-		RequestDispatcher rd = request.getRequestDispatcher(forward);
-		rd.forward(request, response);
+		
 	}
 
 

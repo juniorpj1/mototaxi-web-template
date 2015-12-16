@@ -44,7 +44,7 @@
 					name="formEmpr">
 
 					<div class="row">
-						<div class="form group col-md-6">
+						<div class="form group col-md-6" style="visibility: hidden;">
 							<label for="codBandeirada"> Código: </label> <input type="text"
 								name="codBandeirada" value="${ban.codBandeirada}"
 								class="form-control" id="codBandeirada" readonly="readonly" /> <br />

@@ -44,7 +44,7 @@
 					name="formCha">
 
 					<div class="row">
-						<div class="form group col-md-6">
+						<div class="form group col-md-6" style="visibility: hidden;">
 							<label for="codChamado"> Código: </label> <input type="text"
 								name="codChamado" value="${cha.codChamado}"
 								class="form-control" id="codChamado" readonly="readonly" /> <br />

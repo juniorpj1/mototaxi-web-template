@@ -46,7 +46,9 @@
 		<form
 			action="<%=request.getContextPath()%>/cliente/MototaxistaServlet2"
 			method="post">
+			
 			<input type="hidden" name="cod" value="${cod}" />
+			
 			<div class="row">
 				<div class="form-group col-md-6">
 					<label for="media1"> Valor da Média: </label>
